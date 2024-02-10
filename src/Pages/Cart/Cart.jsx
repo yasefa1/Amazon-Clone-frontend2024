@@ -47,11 +47,11 @@ function Cart() {
                       />
                       <div className={classes.button_container}>
                         <button className={classes.btn} onClick={()=>increment(item)}>
-                          <MdArrowDropUp size ={35}/>
+                          <MdArrowDropUp size ={50}/>
                         </button>
                         <span>{item.amount}</span>
-                        <button onClick={()=>decrement(item.id)}>
-                          <MdArrowDropDown size ={35}/>
+                        <button className={classes.btn} onClick={()=>decrement(item.id)}>
+                          <MdArrowDropDown size ={50}/>
                         </button>
                      
                       </div>
