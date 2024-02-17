@@ -37,14 +37,15 @@ function Cart() {
                 {
                   basket?.length===0?(<p>Opps ! No items in your cart</p>):(
                     basket?.map((item ,i)=>{
-                      return <section className={classes.cart_product}>
+                      return <section key = {i} className={classes.cart_product}>
                           < ProductCard
-                      key = {i}
+                      
                       Product ={item}
                       renderDesc={true}
                       renderAdd={false}
                       flex = {true}
                       />
+                      
                       <div className={classes.button_container}>
                         <button className={classes.btn} onClick={()=>increment(item)}>
                           <MdArrowDropUp size ={50}/>
@@ -73,7 +74,7 @@ function Cart() {
                 <input type="checkbox" />
                 <small>This order contains a gift</small>
               </span>
-              <Link to ="/Payment">Continue to checkout</Link>
+              <Link to ="/Payments">Continue to checkout</Link>
             </div>
           )}
         </section>

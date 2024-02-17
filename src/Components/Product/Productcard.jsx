@@ -8,7 +8,7 @@ import {DataContext} from '../Dataprovider/Dataprovider'
 import {Type} from "../../Utility/Actiontype"
 
 function Productcard({Product ,flex ,renderDesc,renderAdd}) {
-    const {image,title,id,rating,price,description} = Product;
+    const {title,id,rating,price,description,image} = Product;
     console.log(Product)
   const [State,dispach]=useContext(DataContext)
   console.log(State)
