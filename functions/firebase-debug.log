@@ -3912,3 +3912,78 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2024-02-16T22:20:24.826Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
 [debug] [2024-02-16T22:20:24.826Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
 [debug] [2024-02-16T22:20:24.826Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-19T19:00:22.847Z] ----------------------------------------------------------------------
+[debug] [2024-02-19T19:00:22.849Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yatef\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-02-19T19:00:22.849Z] CLI Version:   13.2.1
+[debug] [2024-02-19T19:00:22.850Z] Platform:      win32
+[debug] [2024-02-19T19:00:22.850Z] Node Version:  v20.10.0
+[debug] [2024-02-19T19:00:22.850Z] Time:          Mon Feb 19 2024 14:00:22 GMT-0500 (Eastern Standard Time)
+[debug] [2024-02-19T19:00:22.850Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-19T19:00:22.852Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-19T19:00:22.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-19T19:00:22.961Z] > authorizing via signed-in user (yateferi@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-02-19T19:00:22.970Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-19T19:00:22.970Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-28f6e. This may result in unexpected behavior. 
+[debug] [2024-02-19T19:00:22.982Z] [hub] writing locator at C:\Users\yatef\AppData\Local\Temp\hub-clone-28f6e.json
+[debug] [2024-02-19T19:00:22.998Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-19T19:00:22.998Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-19T19:00:22.998Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-19T19:00:23.002Z] defaultcredentials: writing to file C:\Users\yatef\AppData\Roaming\firebase\yateferi_gmail_com_application_default_credentials.json
+[debug] [2024-02-19T19:00:23.005Z] Setting GAC to C:\Users\yatef\AppData\Roaming\firebase\yateferi_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\yatef\\AppData\\Roaming\\firebase\\yateferi_gmail_com_application_default_credentials.json"}}
+[debug] [2024-02-19T19:00:23.006Z] > refreshing access token with scopes: []
+[debug] [2024-02-19T19:00:23.007Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-19T19:00:23.007Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-19T19:00:23.144Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-19T19:00:23.144Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-19T19:00:23.279Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-19T19:00:23.279Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-19T19:00:23.294Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-28f6e/adminSdkConfig [none]
+[debug] [2024-02-19T19:00:23.760Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-28f6e/adminSdkConfig 200
+[debug] [2024-02-19T19:00:23.760Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-28f6e/adminSdkConfig {"projectId":"clone-28f6e","storageBucket":"clone-28f6e.appspot.com"}
+[debug] [2024-02-19T19:00:23.782Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-19T19:00:23.782Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-19T19:00:23.782Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\yatef\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\yatef\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-19T19:00:23.915Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-02-19T19:00:23.916Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\yatef\OneDrive\desktop\Evangadi\Phase-4 projects\Amazonclone2024\Amazon-Clone-frontend2024\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\yatef\\OneDrive\\desktop\\Evangadi\\Phase-4 projects\\Amazonclone2024\\Amazon-Clone-frontend2024\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-19T19:00:24.062Z] Validating nodejs source
+[debug] [2024-02-19T19:00:26.605Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.16.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T19:00:26.605Z] Building nodejs source
+[debug] [2024-02-19T19:00:26.606Z] Failed to find version of module node: reached end of search path C:\Users\yatef\OneDrive\desktop\Evangadi\Phase-4 projects\Amazonclone2024\Amazon-Clone-frontend2024\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T19:00:26.613Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T19:00:26.623Z] Found firebase-functions binary at 'C:\Users\yatef\OneDrive\desktop\Evangadi\Phase-4 projects\Amazonclone2024\Amazon-Clone-frontend2024\functions\node_modules\.bin\firebase-functions'

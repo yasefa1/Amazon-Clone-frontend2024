@@ -46,7 +46,7 @@ function Orders() {
                   <hr />
                   <p>Order ID: {eachOrder?.id}</p>
                   {eachOrder?.data?.basket?.map((order) => (
-                    <ProductCard flex={true} product={order} key={order.id} />
+                    <ProductCard flex={true} Product={order} key={order.id} />
                   ))}
                 </div>
               );

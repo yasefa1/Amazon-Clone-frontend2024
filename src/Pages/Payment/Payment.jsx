@@ -99,7 +99,7 @@ console.log(basket)
           <h3>Review items and delivery</h3>
           <div>
             {basket?.map((item,i) => (
-              <ProductCard key={i} product={item} flex={true} />
+              <ProductCard key={i} Product={item} flex={true} />
             ))}
           </div>
         </div>

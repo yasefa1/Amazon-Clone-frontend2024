@@ -26,7 +26,7 @@ app.post("/payment/create",async(req,res)=>{
     })
     console.log(paymentIntent)
     res.status(201).json({
-      clinetSecret:paymentIntent.client_secret,});
+      clientSecret:paymentIntent.client_secret,});
     console.log("payment recived thanks", {total})
     res.send(total)
   }

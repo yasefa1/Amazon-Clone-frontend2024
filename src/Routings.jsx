@@ -32,7 +32,7 @@ element={
   </ProtectedRoute>
 }
 />
-        <Route path = "/order" element = {<Orders/>}/>
+        <Route path = "/orders" element = {<Orders/>}/>
         <Route path = "/category/:catagoryName" element = {<Results/>}/>
         <Route path='/products/:productId' element = {<ProductDetails/>}/>
         <Route path = "/Cart" element = {<Cart/>}/>
